@@ -1,0 +1,10 @@
+# IDE
+.idea/
+
+# Gradle
+.gradle/
+build/
+
+# Cache and outputs
+*.json
+*.csv

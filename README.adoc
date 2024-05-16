@@ -1,0 +1,17 @@
+= GitHub Repository Report Creator
+
+A simple tool to create a report with GitHub Organization repository list and attributes.
+
+What it currently can do:
+
+* Cashes all responses, so data is not re-downloaded when restarted.
+* Skips archived repositories.
+* Adds the following attributes to the report:
+    ** Description,
+    ** Uses Jenkins (by checking if there's `Jenkinsfile` in the repository root,
+    ** Uses GitHub Actions (by checking if there's anything in `.github/workflows`),
+    ** If it's a Gradle build (by checking if there is a `build.gradle.kts` or `build.gradle` file in the repository root),
+    ** Languages used in the project,
+    ** Private or Public,
+    ** Archived or not (currently, always `FALSE` since we are skipping those to preserve API calls),
+    ** Last repository update date
